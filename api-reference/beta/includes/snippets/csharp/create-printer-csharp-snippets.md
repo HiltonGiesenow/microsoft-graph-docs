@@ -12,7 +12,7 @@ var manufacturer = "Test Printer Manufacturer";
 
 var model = "Test Printer Model";
 
-String? physicalDeviceId = null;
+String physicalDeviceId = null;
 
 var hasPhysicalDevice = false;
 
@@ -22,7 +22,7 @@ var certificateSigningRequest = new PrintCertificateSigningRequestObject
 	TransportKey = "{sampleTransportKey}"
 };
 
-String? connectorId = null;
+String connectorId = null;
 
 await graphClient.Print.Printers
 	.Create(displayName,manufacturer,model,certificateSigningRequest,physicalDeviceId,hasPhysicalDevice,connectorId)
