@@ -12,7 +12,7 @@ BookingWorkHours workingHours = new BookingWorkHours();
 workingHours.additionalDataManager().put("day@odata.type", new JsonPrimitive("#microsoft.graph.dayOfWeek"));
 workingHours.day = DayOfWeek.MONDAY;
 workingHours.additionalDataManager().put("timeSlots@odata.type", new JsonPrimitive("#Collection(microsoft.graph.bookingWorkTimeSlot)"));
-LinkedList<String> timeSlotsList = new LinkedList<String>();
+LinkedList<BookingWorkTimeSlot> timeSlotsList = new LinkedList<BookingWorkTimeSlot>();
 workingHours.timeSlots = timeSlotsList;
 workingHoursList.add(workingHours);
 BookingWorkHours workingHours1 = new BookingWorkHours();

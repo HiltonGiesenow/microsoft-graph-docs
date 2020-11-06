@@ -10,9 +10,9 @@ String use = "use-value";
 
 String k = "application-secret-to-be-uploaded";
 
-int nbf = 1508969811;
+Long nbf = 1508969811L;
 
-int exp = 1508973711;
+Long exp = 1508973711L;
 
 graphClient.trustFramework().keySets("{id}")
 	.uploadSecret(use,k,nbf,exp)

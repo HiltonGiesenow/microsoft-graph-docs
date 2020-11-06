@@ -14,7 +14,7 @@ String model = "Test Printer Model";
 
 
 
-boolean hasPhysicalDevice = false;
+Boolean hasPhysicalDevice = false;
 
 PrintCertificateSigningRequest certificateSigningRequest = new PrintCertificateSigningRequest();
 certificateSigningRequest.content = "{content}";

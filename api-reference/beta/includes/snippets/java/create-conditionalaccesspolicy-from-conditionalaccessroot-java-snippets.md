@@ -31,8 +31,8 @@ conditions.devices = devices;
 conditionalAccessPolicy.conditions = conditions;
 ConditionalAccessGrantControls grantControls = new ConditionalAccessGrantControls();
 grantControls.operator = "OR";
-LinkedList<String> builtInControlsList = new LinkedList<String>();
-builtInControlsList.add("mfa");
+LinkedList<ConditionalAccessGrantControl> builtInControlsList = new LinkedList<ConditionalAccessGrantControl>();
+builtInControlsList.add(ConditionalAccessGrantControl.MFA);
 grantControls.builtInControls = builtInControlsList;
 conditionalAccessPolicy.grantControls = grantControls;
 

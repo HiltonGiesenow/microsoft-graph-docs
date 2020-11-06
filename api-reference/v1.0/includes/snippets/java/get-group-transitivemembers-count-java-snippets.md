@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
-Int32 int32 = graphClient.groups("{id}").transitiveMembers().count()
+int int32 = graphClient.groups("{id}").transitiveMembers().count()
 	.buildRequest( requestOptions )
 	.get();
 

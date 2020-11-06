@@ -10,7 +10,7 @@ WorkbookNamedItem workbookNamedItem = new WorkbookNamedItem();
 workbookNamedItem.type = "type-value";
 workbookNamedItem.scope = "scope-value";
 workbookNamedItem.comment = "comment-value";
-Json value = new Json();
+JsonElement value = new JsonObject();
 workbookNamedItem.value = value;
 workbookNamedItem.visible = true;
 

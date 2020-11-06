@@ -20,9 +20,9 @@ fields.icon = icon;
 
 fieldsList.add(fields);
 
-boolean matchCase = true;
+Boolean matchCase = true;
 
-boolean hasHeaders = true;
+Boolean hasHeaders = true;
 
 String orientation = "orientation-value";
 

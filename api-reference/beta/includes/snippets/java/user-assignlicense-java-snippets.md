@@ -8,21 +8,21 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
 AssignedLicense addLicenses = new AssignedLicense();
-LinkedList<String> disabledPlansList = new LinkedList<String>();
-disabledPlansList.add("11b0131d-43c8-4bbb-b2c8-e80f9a50834a");
+LinkedList<UUID> disabledPlansList = new LinkedList<UUID>();
+disabledPlansList.add(UUID.fromString("11b0131d-43c8-4bbb-b2c8-e80f9a50834a"));
 addLicenses.disabledPlans = disabledPlansList;
 addLicenses.skuId = UUID.fromString("skuId-value-1");
 
 addLicensesList.add(addLicenses);
 AssignedLicense addLicenses1 = new AssignedLicense();
-LinkedList<String> disabledPlansList = new LinkedList<String>();
-disabledPlansList.add("a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235");
+LinkedList<UUID> disabledPlansList1 = new LinkedList<UUID>();
+disabledPlansList1.add(UUID.fromString("a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235"));
 addLicenses1.disabledPlans = disabledPlansList1;
 addLicenses1.skuId = UUID.fromString("skuId-value-2");
 
 addLicensesList.add(addLicenses1);
 
-LinkedList<String> removeLicensesList = new LinkedList<String>();
+LinkedList<UUID> removeLicensesList = new LinkedList<UUID>();
 
 graphClient.me()
 	.assignLicense(addLicensesList,removeLicensesList)

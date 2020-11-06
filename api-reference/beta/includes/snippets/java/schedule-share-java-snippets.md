@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean notifyTeam = true;
+Boolean notifyTeam = true;
 
-int startDateTime = 10/8/2018 12:00:00 AM;
+Calendar startDateTime = CalendarSerializer.deserialize("10/8/2018 12:00:00 AM");
 
-int endDateTime = 10/15/2018 12:00:00 AM;
+Calendar endDateTime = CalendarSerializer.deserialize("10/15/2018 12:00:00 AM");
 
 graphClient.teams("{teamId}").schedule()
 	.share(notifyTeam,startDateTime,endDateTime)

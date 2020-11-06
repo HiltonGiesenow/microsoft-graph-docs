@@ -16,7 +16,7 @@ accessPackageAssignmentPolicy.expirationDateTime = CalendarSerializer.deserializ
 RequestorSettings requestorSettings = new RequestorSettings();
 requestorSettings.scopeType = "AllExistingConnectedOrganizationSubjects";
 requestorSettings.acceptRequests = true;
-LinkedList<String> allowedRequestorsList = new LinkedList<String>();
+LinkedList<UserSet> allowedRequestorsList = new LinkedList<UserSet>();
 requestorSettings.allowedRequestors = allowedRequestorsList;
 accessPackageAssignmentPolicy.requestorSettings = requestorSettings;
 ApprovalSettings requestApprovalSettings = new ApprovalSettings();
@@ -79,7 +79,7 @@ accessReviewSettings.recurrenceType = "quarterly";
 accessReviewSettings.reviewerType = "Self";
 accessReviewSettings.startDateTime = CalendarSerializer.deserialize("2020-04-01T07:59:59.998Z");
 accessReviewSettings.durationInDays = 25;
-LinkedList<String> reviewersList = new LinkedList<String>();
+LinkedList<UserSet> reviewersList = new LinkedList<UserSet>();
 accessReviewSettings.reviewers = reviewersList;
 accessPackageAssignmentPolicy.accessReviewSettings = accessReviewSettings;
 

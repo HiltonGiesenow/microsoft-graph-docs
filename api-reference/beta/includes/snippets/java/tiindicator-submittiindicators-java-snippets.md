@@ -29,7 +29,7 @@ value.tlpLevel = TlpLevel.GREEN;
 
 valueList.add(value);
 TiIndicator value1 = new TiIndicator();
-LinkedList<String> activityGroupNamesList = new LinkedList<String>();
+LinkedList<String> activityGroupNamesList1 = new LinkedList<String>();
 value1.activityGroupNames = activityGroupNamesList1;
 value1.confidence = 0;
 value1.description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.";
@@ -37,12 +37,12 @@ value1.expirationDateTime = CalendarSerializer.deserialize("2019-03-01T21:44:03.
 value1.externalId = "Test--8586509942423126760MS164-1";
 value1.fileHashType = FileHashType.SHA256;
 value1.fileHashValue = "1796b433950990b28d6a22456c9d2b58ced1bdfcdf5f16f7e39d6b9bdca4213b";
-LinkedList<String> killChainList = new LinkedList<String>();
+LinkedList<String> killChainList1 = new LinkedList<String>();
 value1.killChain = killChainList1;
-LinkedList<String> malwareFamilyNamesList = new LinkedList<String>();
+LinkedList<String> malwareFamilyNamesList1 = new LinkedList<String>();
 value1.malwareFamilyNames = malwareFamilyNamesList1;
 value1.severity = 0;
-LinkedList<String> tagsList = new LinkedList<String>();
+LinkedList<String> tagsList1 = new LinkedList<String>();
 value1.tags = tagsList1;
 value1.targetProduct = "Azure Sentinel";
 value1.threatType = "WatchList";
