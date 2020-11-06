@@ -15,7 +15,7 @@ LinkedList<String> matchedConditionDescriptionsList = new LinkedList<String>();
 matchedConditionDescriptionsList.add("Credit Card Number");
 policyTip.matchedConditionDescriptions = matchedConditionDescriptionsList;
 policyViolation.policyTip = policyTip;
-policyViolation.verdictDetails = EnumSet.of(ChatMessagePolicyViolationVerdictDetailsTypes.ALLOW_OVERRIDE_WITHOUT_JUSTIFICATION);
+policyViolation.verdictDetails = EnumSet.of(ChatMessagePolicyViolationVerdictDetailsTypes.ALLOW_OVERRIDE_WITHOUT_JUSTIFICATION,ChatMessagePolicyViolationVerdictDetailsTypes.ALLOW_FALSE_POSITIVE_OVERRIDE);
 policyViolation.dlpAction = EnumSet.of(ChatMessagePolicyViolationDlpActionTypes.BLOCK_ACCESS);
 chatMessage.policyViolation = policyViolation;
 

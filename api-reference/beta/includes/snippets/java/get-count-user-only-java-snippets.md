@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
-Int32 int32 = graphClient.groups("{id}").members().microsoft.graph.user().count()
+int int32 = graphClient.groups("{id}").members().microsoft.graph.user().count()
 	.buildRequest( requestOptions )
 	.get();
 

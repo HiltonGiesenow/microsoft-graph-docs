@@ -8,10 +8,10 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
 ConditionalAccessConditionSet conditions = new ConditionalAccessConditionSet();
-LinkedList<String> signInRiskLevelsList = new LinkedList<String>();
-signInRiskLevelsList.add("high");
-signInRiskLevelsList.add("medium");
-signInRiskLevelsList.add("low");
+LinkedList<RiskLevel> signInRiskLevelsList = new LinkedList<RiskLevel>();
+signInRiskLevelsList.add(RiskLevel.HIGH);
+signInRiskLevelsList.add(RiskLevel.MEDIUM);
+signInRiskLevelsList.add(RiskLevel.LOW);
 conditions.signInRiskLevels = signInRiskLevelsList;
 conditionalAccessPolicy.conditions = conditions;
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean persistChanges = true;
+Boolean persistChanges = true;
 
 graphClient.me().drive().items("{id}").workbook()
 	.createSession(persistChanges)

@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 String comment = "comment-value";
 
-boolean sendResponse = true;
+Boolean sendResponse = true;
 
 graphClient.me().events("{id}")
 	.accept(comment,sendResponse)

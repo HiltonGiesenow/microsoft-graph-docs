@@ -17,7 +17,7 @@ icon.set = "set-value";
 icon.index = 99;
 criteria.icon = icon;
 criteria.dynamicCriteria = "dynamicCriteria-value";
-Json values = new Json();
+JsonElement values = new JsonObject();
 criteria.values = values;
 criteria.filterOn = "filterOn-value";
 

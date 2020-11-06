@@ -10,9 +10,9 @@ String use = "sig";
 
 String kty = "RSA";
 
-int nbf = 1508969811;
+Long nbf = 1508969811L;
 
-int exp = 1508969811;
+Long exp = 1508969811L;
 
 graphClient.trustFramework().keySets("{id}")
 	.generateKey(use,kty,nbf,exp)

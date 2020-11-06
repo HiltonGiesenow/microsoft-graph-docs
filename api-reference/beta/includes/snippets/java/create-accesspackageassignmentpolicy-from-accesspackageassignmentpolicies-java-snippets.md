@@ -14,7 +14,7 @@ accessPackageAssignmentPolicy.accessReviewSettings = null;
 RequestorSettings requestorSettings = new RequestorSettings();
 requestorSettings.scopeType = "NoSubjects";
 requestorSettings.acceptRequests = true;
-LinkedList<String> allowedRequestorsList = new LinkedList<String>();
+LinkedList<UserSet> allowedRequestorsList = new LinkedList<UserSet>();
 requestorSettings.allowedRequestors = allowedRequestorsList;
 accessPackageAssignmentPolicy.requestorSettings = requestorSettings;
 ApprovalSettings requestApprovalSettings = new ApprovalSettings();
@@ -22,7 +22,7 @@ requestApprovalSettings.isApprovalRequired = false;
 requestApprovalSettings.isApprovalRequiredForExtension = false;
 requestApprovalSettings.isRequestorJustificationRequired = false;
 requestApprovalSettings.approvalMode = "NoApproval";
-LinkedList<String> approvalStagesList = new LinkedList<String>();
+LinkedList<ApprovalStage> approvalStagesList = new LinkedList<ApprovalStage>();
 requestApprovalSettings.approvalStages = approvalStagesList;
 accessPackageAssignmentPolicy.requestApprovalSettings = requestApprovalSettings;
 

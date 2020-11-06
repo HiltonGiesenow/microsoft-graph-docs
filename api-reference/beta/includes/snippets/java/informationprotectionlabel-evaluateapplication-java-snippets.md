@@ -54,7 +54,7 @@ labelingOptions.additionalDataManager().put("labelId@odata.type", new JsonPrimit
 labelingOptions.labelId = UUID.fromString("97309856-9c28-4ac6-9382-5f8bc20c457b");
 labelingOptions.downgradeJustification = null;
 labelingOptions.additionalDataManager().put("extendedProperties@odata.type", new JsonPrimitive("#Collection(microsoft.graph.keyValuePair)"));
-LinkedList<String> extendedPropertiesList = new LinkedList<String>();
+LinkedList<KeyValuePair> extendedPropertiesList = new LinkedList<KeyValuePair>();
 labelingOptions.extendedProperties = extendedPropertiesList;
 
 graphClient.informationProtection().policy().labels()

@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Int32 index = new Int32();
+int index = new int();
 
-LinkedList<Json> valuesList = new LinkedList<Json>();
-Json values = new Json();
+LinkedList<JsonElement> valuesList = new LinkedList<JsonElement>();
+JsonElement values = new JsonObject();
 
 valuesList.add(values);
 

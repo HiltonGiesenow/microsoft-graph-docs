@@ -10,7 +10,7 @@ LinkedList<String> emailAddressesList = new LinkedList<String>();
 emailAddressesList.add("danas@contoso.onmicrosoft.com");
 emailAddressesList.add("fannyd@contoso.onmicrosoft.com");
 
-MailTipsType mailTipsOptions = MailTipsType.AUTOMATIC_REPLIES;
+EnumSet<MailTipsType> mailTipsOptions = EnumSet.of(MailTipsType.AUTOMATIC_REPLIES,MailTipsType.MAILBOX_FULL_STATUS);
 
 graphClient.me()
 	.getMailTips(emailAddressesList,mailTipsOptions)

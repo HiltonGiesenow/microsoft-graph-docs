@@ -12,7 +12,7 @@ String description = "Self help community for library";
 
 String mailNickname = "libassist";
 
-ClonableTeamParts partsToClone = ClonableTeamParts.APPS;
+EnumSet<ClonableTeamParts> partsToClone = EnumSet.of(ClonableTeamParts.APPS,ClonableTeamParts.TABS,ClonableTeamParts.SETTINGS,ClonableTeamParts.CHANNELS,ClonableTeamParts.MEMBERS);
 
 TeamVisibilityType visibility = TeamVisibilityType.PUBLIC;
 

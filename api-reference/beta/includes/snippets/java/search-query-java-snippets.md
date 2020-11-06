@@ -8,8 +8,8 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 LinkedList<SearchRequest> requestsList = new LinkedList<SearchRequest>();
 SearchRequest requests = new SearchRequest();
-LinkedList<String> entityTypesList = new LinkedList<String>();
-entityTypesList.add("externalItem");
+LinkedList<EntityType> entityTypesList = new LinkedList<EntityType>();
+entityTypesList.add(EntityType.EXTERNAL_ITEM);
 requests.entityTypes = entityTypesList;
 LinkedList<String> contentSourcesList = new LinkedList<String>();
 contentSourcesList.add("/external/connections/connectionfriendlyname");
